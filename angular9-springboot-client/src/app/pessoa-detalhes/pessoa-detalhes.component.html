@@ -1,0 +1,32 @@
+<h2>Employee Details</h2>
+
+<hr/>
+<div *ngIf="pessoa">
+  <div>
+    <label><b>Nome: </b></label> {{pessoa.nome}}
+  </div>
+  <div>
+    <label><b>Email: </b></label> {{pessoa.email}}
+  </div>
+  <div>
+    <label><b>Sexo: </b></label> {{pessoa.sexo}}
+  </div>
+  <div>
+    <label><b>Nacionalidade: </b></label> {{pessoa.nacionalidade}}
+  </div>
+  <div>
+    <label><b>Naturalidade: </b></label> {{pessoa.naturalidade}}
+  </div>
+  <div>
+    <label><b>CPF: </b></label> {{pessoa.cpf | mask: "000.000.000-00"}}
+  </div>
+  <div>
+    <label><b>Data de Nascimento: </b></label> {{pessoa.dataNascimento}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Volta para a listagem de pessoas</button><br>
+
+
